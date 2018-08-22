@@ -2,6 +2,12 @@
 
 Get the code from `./samples/shapes/train_shapes.ipynb` and put it to `trainShapes.py`
 
+There are 63 images in train dataset now (just for testing the format of the dataset). They are on the folder `./train_data`.
+
+The tools for prepare the dataset are in `./tools`. label2opencv is the tool for converting the mask image (label.png) from 16 bits to 8 bits.
+
+Just download the **train_data** and run **trainShapes.py** to start training. Please note you need to change the dataset path in trainShapes.py to load the dataset.
+
 # Mask R-CNN for Object Detection and Segmentation
 
 This is an implementation of [Mask R-CNN](https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
